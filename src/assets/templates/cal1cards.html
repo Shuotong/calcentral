@@ -1,0 +1,18 @@
+<script>
+// var app = angular.module('count', []);
+// app.controller('countCtrl', function($scope) {
+//     $scope.count = 0;
+// });
+
+function countCtrl($scope) {
+	 $scope.count = 0;
+}
+</script> 
+
+<div ng-controller="countCtrl">
+
+	<button ng-click="count = count + 10">+ Add meal points</button>
+
+	<p>{{count}}</p>
+
+</div>

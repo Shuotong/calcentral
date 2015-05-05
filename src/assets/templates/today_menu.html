@@ -1,0 +1,12 @@
+
+<div ng-app="menu" ng-controller="menuctrl" >
+<p> {{fh}} </p>
+</div>
+
+<script>
+var app = angular.module('menu', []);
+app.controller('menuctrl', function($scope,$http) {
+	$http.get('/dummy/json/menu.json');
+	.success(function (response) {$scope.fh = response["Foothill"];});
+});
+</script>

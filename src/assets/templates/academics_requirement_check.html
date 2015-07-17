@@ -1,0 +1,22 @@
+<div class="cc-widget" data-ng-controller="ReqCheckController">
+  <div class="cc-widget-title">
+    <h2>Requirement Checker</h2>
+  </div>
+  <button class="cc-button cc-right cc-widget-title-button">
+
+  </button>
+  <div class="cc-widget-padding">
+    <div class="cc-table">
+      <ul>
+        <li ng-repeat="semester in semesters">
+          {{semester.name}}
+          <ul>
+            <li ng-repeat="class in semester.classes">
+            {{class.course_code}}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
